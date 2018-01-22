@@ -47,7 +47,6 @@ class PinItem extends Component {
 
   onChange(e) {
     const value = this.validate(e.target.value);
-    if (this.state.value === value) return;
     if (value.length < 2) {
       this.setState({value});
       // timeout is to make sure that clearing happens after value is set
